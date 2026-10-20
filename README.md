@@ -200,7 +200,7 @@ python -m glycotwin.operating    # trade-off, core-EHR and day-1 analyses -> res
 python deliverables/build_deck.py && python deliverables/build_readme.py
 ```
 
-The full pipeline takes about 15 minutes on a laptop CPU. The data is already in `data/raw/`.
+The two evaluation runs take about 20 minutes on a 10-core laptop CPU. The data is already in `data/raw/`.
 
 ## Repository structure
 

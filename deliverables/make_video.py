@@ -66,7 +66,8 @@ def render():
         run("ffmpeg", "-loglevel", "error", "-y", "-loop", "1", "-framerate", "2", "-i", img, "-i", wav,
             "-vf", "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=white,format=yuv420p",
             "-c:v", "libx264", "-tune", "stillimage", "-preset", "veryfast", "-r", "2",
-            "-c:a", "aac", "-b:a", "96k", "-ar", "48000", "-af", "loudnorm=I=-16:TP=-1.5", "-shortest", mp4)
+            "-c:a", "aac", "-b:a", "96k", "-ar", "48000", "-af", "atempo=1.07,loudnorm=I=-16:TP=-1.5",
+            "-t", f"{sf.info(wav).duration / 1.07:.2f}", mp4)
         parts.append(mp4)
     lst = os.path.join(OUT, "list.txt")
     with open(lst, "w") as f:
@@ -82,7 +83,8 @@ def render():
 if __name__ == "__main__":
     step = sys.argv[1] if len(sys.argv) > 1 else "all"
     if step in ("tts", "all"):
-        json.dump(tts(), open(os.path.join(OUT, "durations.json"), "w"), indent=1)
+        only = set(os.environ["ONLY"].split(",")) if os.environ.get("ONLY") else None
+        tts(only)
     if step in ("slides", "all"):
         slides()
     if step in ("render", "all"):
