@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+results/dataset.parquet
+results/oof.parquet
+deliverables/video/
+*.wav
