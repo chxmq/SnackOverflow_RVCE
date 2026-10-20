@@ -1,0 +1,114 @@
+hyper CGM only {'auroc': 0.8647727544700414, 'auprc': 0.5700742632150646, 'auroc_day1': 0.815070273174101, 'auroc_later': 0.8663372682790568, 'n_day1': 3051, 'pos_day1': 439}
+hyper Personal twin (CGM + events + memory) {'auroc': 0.8783179052677064, 'auprc': 0.6033579298919363, 'auroc_day1': 0.8075633051589475, 'auroc_later': 0.8804515970217017, 'n_day1': 3051, 'pos_day1': 439}
+hyper Personal twin + core EHR (9 fields) {'auroc': 0.8749110737991201, 'auprc': 0.6010059384778605, 'auroc_day1': 0.813262426439039, 'auroc_later': 0.8768178212507715, 'n_day1': 3051, 'pos_day1': 439}
+hyper Full twin (+ EHR) {'auroc': 0.8725689877917321, 'auprc': 0.5928655486558022, 'auroc_day1': 0.8070470266895039, 'auroc_later': 0.8745947552255094, 'n_day1': 3051, 'pos_day1': 439}
+hypo CGM only {'auroc': 0.9005060661103023, 'auprc': 0.31093403796827623, 'auroc_day1': 0.9065265611489153, 'auroc_later': 0.8989190822559334, 'n_day1': 4238, 'pos_day1': 268}
+hypo Personal twin (CGM + events + memory) {'auroc': 0.9065418169957382, 'auprc': 0.29624151972862683, 'auroc_day1': 0.8830313169668033, 'auroc_later': 0.9064108000949912, 'n_day1': 4238, 'pos_day1': 268}
+hypo Personal twin + core EHR (9 fields) {'auroc': 0.8976210932971747, 'auprc': 0.2697742439519073, 'auroc_day1': 0.8879497349524419, 'auroc_later': 0.8966794728507312, 'n_day1': 4238, 'pos_day1': 268}
+hypo Full twin (+ EHR) {'auroc': 0.8998731983409954, 'auprc': 0.2704369505832728, 'auroc_day1': 0.8658116846497989, 'auroc_later': 0.9005359359376204, 'n_day1': 4238, 'pos_day1': 268}
+{
+ "hyper": {
+  "CGM only": {
+   "auroc": 0.8647727544700414,
+   "auprc": 0.5700742632150646,
+   "auroc_day1": 0.815070273174101,
+   "auroc_later": 0.8663372682790568,
+   "n_day1": 3051,
+   "pos_day1": 439
+  },
+  "Personal twin (CGM + events + memory)": {
+   "auroc": 0.8783179052677064,
+   "auprc": 0.6033579298919363,
+   "auroc_day1": 0.8075633051589475,
+   "auroc_later": 0.8804515970217017,
+   "n_day1": 3051,
+   "pos_day1": 439
+  },
+  "Personal twin + core EHR (9 fields)": {
+   "auroc": 0.8749110737991201,
+   "auprc": 0.6010059384778605,
+   "auroc_day1": 0.813262426439039,
+   "auroc_later": 0.8768178212507715,
+   "n_day1": 3051,
+   "pos_day1": 439
+  },
+  "Full twin (+ EHR)": {
+   "auroc": 0.8725689877917321,
+   "auprc": 0.5928655486558022,
+   "auroc_day1": 0.8070470266895039,
+   "auroc_later": 0.8745947552255094,
+   "n_day1": 3051,
+   "pos_day1": 439
+  },
+  "ci_vs_cgm": {
+   "Personal twin (CGM + events + memory)": [
+    0.007198726575471104,
+    0.019698939722739502
+   ],
+   "Personal twin + core EHR (9 fields)": [
+    0.0024505205255252543,
+    0.018431077930355897
+   ],
+   "Full twin (+ EHR)": [
+    0.0009015876135198747,
+    0.014707851921094047
+   ]
+  },
+  "ci_day1_core_vs_personal": [
+   -0.010522646301199456,
+   0.02668191208967
+  ]
+ },
+ "hypo": {
+  "CGM only": {
+   "auroc": 0.9005060661103023,
+   "auprc": 0.31093403796827623,
+   "auroc_day1": 0.9065265611489153,
+   "auroc_later": 0.8989190822559334,
+   "n_day1": 4238,
+   "pos_day1": 268
+  },
+  "Personal twin (CGM + events + memory)": {
+   "auroc": 0.9065418169957382,
+   "auprc": 0.29624151972862683,
+   "auroc_day1": 0.8830313169668033,
+   "auroc_later": 0.9064108000949912,
+   "n_day1": 4238,
+   "pos_day1": 268
+  },
+  "Personal twin + core EHR (9 fields)": {
+   "auroc": 0.8976210932971747,
+   "auprc": 0.2697742439519073,
+   "auroc_day1": 0.8879497349524419,
+   "auroc_later": 0.8966794728507312,
+   "n_day1": 4238,
+   "pos_day1": 268
+  },
+  "Full twin (+ EHR)": {
+   "auroc": 0.8998731983409954,
+   "auprc": 0.2704369505832728,
+   "auroc_day1": 0.8658116846497989,
+   "auroc_later": 0.9005359359376204,
+   "n_day1": 4238,
+   "pos_day1": 268
+  },
+  "ci_vs_cgm": {
+   "Personal twin (CGM + events + memory)": [
+    -0.00401768612592957,
+    0.014980058324735212
+   ],
+   "Personal twin + core EHR (9 fields)": [
+    -0.014854969238717791,
+    0.009323632338165438
+   ],
+   "Full twin (+ EHR)": [
+    -0.013333005459916314,
+    0.009846047125464835
+   ]
+  },
+  "ci_day1_core_vs_personal": [
+   -0.011992491624796538,
+   0.019644929417526196
+  ]
+ }
+}

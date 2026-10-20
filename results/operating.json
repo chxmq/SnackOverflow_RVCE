@@ -1,0 +1,570 @@
+{
+  "hyper": {
+    "CGM only": {
+      "auroc": 0.8647727544700414,
+      "auprc": 0.5700742632150646,
+      "auroc_day1": 0.815070273174101,
+      "auroc_later": 0.8663372682790568,
+      "n_day1": 3051,
+      "pos_day1": 439,
+      "tradeoff": [
+        {
+          "threshold": 0.05,
+          "recall": 1.0,
+          "false_per_day": 4.11693573521162,
+          "median_lead_min": 120.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.1,
+          "recall": 0.9979909593169262,
+          "false_per_day": 4.096419444172359,
+          "median_lead_min": 120.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.15,
+          "recall": 0.9969864389753893,
+          "false_per_day": 3.6253995957293355,
+          "median_lead_min": 120.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.2,
+          "recall": 0.9904570567553993,
+          "false_per_day": 3.1398473744668354,
+          "median_lead_min": 105.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.3,
+          "recall": 0.9773982923154194,
+          "false_per_day": 2.3482604785353653,
+          "median_lead_min": 90.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.4,
+          "recall": 0.9578101456554495,
+          "false_per_day": 1.6831907106793353,
+          "median_lead_min": 60.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.5,
+          "recall": 0.9226519337016574,
+          "false_per_day": 1.1130087888798856,
+          "median_lead_min": 45.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.6,
+          "recall": 0.8628829733802109,
+          "false_per_day": 0.7035378135546435,
+          "median_lead_min": 30.0,
+          "events": 1991
+        }
+      ]
+    },
+    "Personal twin (CGM + events + memory)": {
+      "auroc": 0.8783179052677064,
+      "auprc": 0.6033579298919363,
+      "auroc_day1": 0.8075633051589475,
+      "auroc_later": 0.8804515970217017,
+      "n_day1": 3051,
+      "pos_day1": 439,
+      "tradeoff": [
+        {
+          "threshold": 0.05,
+          "recall": 0.9989954796584631,
+          "false_per_day": 3.6202705229695202,
+          "median_lead_min": 120.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.1,
+          "recall": 0.9974886991461577,
+          "false_per_day": 3.507430922253587,
+          "median_lead_min": 120.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.15,
+          "recall": 0.9904570567553993,
+          "false_per_day": 3.1629282018860034,
+          "median_lead_min": 120.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.2,
+          "recall": 0.9829231541938724,
+          "false_per_day": 2.7808122812797755,
+          "median_lead_min": 105.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.3,
+          "recall": 0.9588146659969864,
+          "false_per_day": 2.061887249445687,
+          "median_lead_min": 90.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.4,
+          "recall": 0.9321948769462581,
+          "false_per_day": 1.4498179001077465,
+          "median_lead_min": 75.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.5,
+          "recall": 0.8874937217478654,
+          "false_per_day": 0.9924755790242298,
+          "median_lead_min": 60.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.6,
+          "recall": 0.8252134605725766,
+          "false_per_day": 0.6334404858371699,
+          "median_lead_min": 45.0,
+          "events": 1991
+        }
+      ]
+    },
+    "Personal twin + core EHR (9 fields)": {
+      "auroc": 0.8749110737991201,
+      "auprc": 0.6010059384778605,
+      "auroc_day1": 0.813262426439039,
+      "auroc_later": 0.8768178212507715,
+      "n_day1": 3051,
+      "pos_day1": 439,
+      "tradeoff": [
+        {
+          "threshold": 0.05,
+          "recall": 0.9989954796584631,
+          "false_per_day": 3.57838309543103,
+          "median_lead_min": 120.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.1,
+          "recall": 0.9929683576092416,
+          "false_per_day": 3.5176890677732175,
+          "median_lead_min": 120.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.15,
+          "recall": 0.9864389753892516,
+          "false_per_day": 3.1150568561277288,
+          "median_lead_min": 120.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.2,
+          "recall": 0.9779005524861878,
+          "false_per_day": 2.671392062403719,
+          "median_lead_min": 105.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.3,
+          "recall": 0.9568056253139126,
+          "false_per_day": 2.0054674490877202,
+          "median_lead_min": 90.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.4,
+          "recall": 0.9236564540431944,
+          "false_per_day": 1.4224628453887325,
+          "median_lead_min": 75.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.5,
+          "recall": 0.8784530386740331,
+          "false_per_day": 0.9770883607447843,
+          "median_lead_min": 60.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.6,
+          "recall": 0.8056253139126067,
+          "false_per_day": 0.6189081130176937,
+          "median_lead_min": 45.0,
+          "events": 1991
+        }
+      ]
+    },
+    "Full twin (+ EHR)": {
+      "auroc": 0.8725689877917321,
+      "auprc": 0.5928655486558022,
+      "auroc_day1": 0.8070470266895039,
+      "auroc_later": 0.8745947552255094,
+      "n_day1": 3051,
+      "pos_day1": 439,
+      "tradeoff": [
+        {
+          "threshold": 0.05,
+          "recall": 0.9984932194876946,
+          "false_per_day": 3.5441892770322623,
+          "median_lead_min": 120.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.1,
+          "recall": 0.9939728779507785,
+          "false_per_day": 3.4946082403540495,
+          "median_lead_min": 120.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.15,
+          "recall": 0.9844299347061778,
+          "false_per_day": 3.09283087416853,
+          "median_lead_min": 120.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.2,
+          "recall": 0.9743847312908086,
+          "false_per_day": 2.6577145350442124,
+          "median_lead_min": 105.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.3,
+          "recall": 0.951783023606228,
+          "false_per_day": 1.9191280576308318,
+          "median_lead_min": 90.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.4,
+          "recall": 0.9176293319939729,
+          "false_per_day": 1.3207362356523988,
+          "median_lead_min": 75.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.5,
+          "recall": 0.8603716725263687,
+          "false_per_day": 0.9292170149865097,
+          "median_lead_min": 45.0,
+          "events": 1991
+        },
+        {
+          "threshold": 0.6,
+          "recall": 0.784028126569563,
+          "false_per_day": 0.5881336764588029,
+          "median_lead_min": 30.0,
+          "events": 1991
+        }
+      ]
+    },
+    "ci_vs_cgm": {
+      "Personal twin (CGM + events + memory)": [
+        0.007198726575471104,
+        0.019698939722739502
+      ],
+      "Personal twin + core EHR (9 fields)": [
+        0.0024505205255252543,
+        0.018431077930355897
+      ],
+      "Full twin (+ EHR)": [
+        0.0009015876135198747,
+        0.014707851921094047
+      ]
+    },
+    "ci_day1_core_vs_personal": [
+      -0.010522646301199456,
+      0.02668191208967
+    ]
+  },
+  "hypo": {
+    "CGM only": {
+      "auroc": 0.9005060661103023,
+      "auprc": 0.31093403796827623,
+      "auroc_day1": 0.9065265611489153,
+      "auroc_later": 0.8989190822559334,
+      "n_day1": 4238,
+      "pos_day1": 268,
+      "tradeoff": [
+        {
+          "threshold": 0.05,
+          "recall": 0.9977678571428571,
+          "false_per_day": 2.7731186721400527,
+          "median_lead_min": 105.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.1,
+          "recall": 0.9866071428571429,
+          "false_per_day": 1.8370628934737896,
+          "median_lead_min": 82.5,
+          "events": 448
+        },
+        {
+          "threshold": 0.15,
+          "recall": 0.9754464285714286,
+          "false_per_day": 1.36176881773092,
+          "median_lead_min": 75.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.2,
+          "recall": 0.9553571428571429,
+          "false_per_day": 1.0548792976019807,
+          "median_lead_min": 60.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.3,
+          "recall": 0.8816964285714286,
+          "false_per_day": 0.6171984220977553,
+          "median_lead_min": 45.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.4,
+          "recall": 0.7857142857142857,
+          "false_per_day": 0.3744223114665053,
+          "median_lead_min": 30.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.5,
+          "recall": 0.6495535714285714,
+          "false_per_day": 0.22055012867205107,
+          "median_lead_min": 30.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.6,
+          "recall": 0.44419642857142855,
+          "false_per_day": 0.10087176427636443,
+          "median_lead_min": 15.0,
+          "events": 448
+        }
+      ]
+    },
+    "Personal twin (CGM + events + memory)": {
+      "auroc": 0.9065418169957382,
+      "auprc": 0.29624151972862683,
+      "auroc_day1": 0.8830313169668033,
+      "auroc_later": 0.9064108000949912,
+      "n_day1": 4238,
+      "pos_day1": 268,
+      "tradeoff": [
+        {
+          "threshold": 0.05,
+          "recall": 0.9665178571428571,
+          "false_per_day": 1.757562265696655,
+          "median_lead_min": 90.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.1,
+          "recall": 0.9352678571428571,
+          "false_per_day": 1.1036054888202245,
+          "median_lead_min": 75.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.15,
+          "recall": 0.8839285714285714,
+          "false_per_day": 0.7753448321920555,
+          "median_lead_min": 60.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.2,
+          "recall": 0.8191964285714286,
+          "false_per_day": 0.6043757401982175,
+          "median_lead_min": 60.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.3,
+          "recall": 0.6808035714285714,
+          "false_per_day": 0.36843839324672095,
+          "median_lead_min": 45.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.4,
+          "recall": 0.5379464285714286,
+          "false_per_day": 0.23935672879137324,
+          "median_lead_min": 45.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.5,
+          "recall": 0.40848214285714285,
+          "false_per_day": 0.13506558267513205,
+          "median_lead_min": 30.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.6,
+          "recall": 0.25892857142857145,
+          "false_per_day": 0.07266186409738117,
+          "median_lead_min": 30.0,
+          "events": 448
+        }
+      ]
+    },
+    "Personal twin + core EHR (9 fields)": {
+      "auroc": 0.8976210932971747,
+      "auprc": 0.2697742439519073,
+      "auroc_day1": 0.8879497349524419,
+      "auroc_later": 0.8966794728507312,
+      "n_day1": 4238,
+      "pos_day1": 268,
+      "tradeoff": [
+        {
+          "threshold": 0.05,
+          "recall": 0.9553571428571429,
+          "false_per_day": 1.5498348189241418,
+          "median_lead_min": 90.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.1,
+          "recall": 0.8973214285714286,
+          "false_per_day": 0.9309267059064481,
+          "median_lead_min": 60.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.15,
+          "recall": 0.8236607142857143,
+          "false_per_day": 0.6548116223363997,
+          "median_lead_min": 45.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.2,
+          "recall": 0.7232142857142857,
+          "false_per_day": 0.48555222126250003,
+          "median_lead_min": 45.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.3,
+          "recall": 0.5379464285714286,
+          "false_per_day": 0.27611508357004844,
+          "median_lead_min": 45.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.4,
+          "recall": 0.4017857142857143,
+          "false_per_day": 0.15130764641454666,
+          "median_lead_min": 30.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.5,
+          "recall": 0.2611607142857143,
+          "false_per_day": 0.09146846421670335,
+          "median_lead_min": 30.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.6,
+          "recall": 0.16071428571428573,
+          "false_per_day": 0.038468045698613555,
+          "median_lead_min": 37.5,
+          "events": 448
+        }
+      ]
+    },
+    "Full twin (+ EHR)": {
+      "auroc": 0.8998731983409954,
+      "auprc": 0.2704369505832728,
+      "auroc_day1": 0.8658116846497989,
+      "auroc_later": 0.9005359359376204,
+      "n_day1": 4238,
+      "pos_day1": 268,
+      "tradeoff": [
+        {
+          "threshold": 0.05,
+          "recall": 0.9776785714285714,
+          "false_per_day": 1.321591081112368,
+          "median_lead_min": 75.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.1,
+          "recall": 0.9017857142857143,
+          "false_per_day": 0.7975708141512544,
+          "median_lead_min": 60.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.15,
+          "recall": 0.8102678571428571,
+          "false_per_day": 0.5334235670207746,
+          "median_lead_min": 45.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.2,
+          "recall": 0.7254464285714286,
+          "false_per_day": 0.38809983882601234,
+          "median_lead_min": 45.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.3,
+          "recall": 0.5223214285714286,
+          "false_per_day": 0.21285651953232834,
+          "median_lead_min": 30.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.4,
+          "recall": 0.35714285714285715,
+          "false_per_day": 0.1136944461759023,
+          "median_lead_min": 22.5,
+          "events": 448
+        },
+        {
+          "threshold": 0.5,
+          "recall": 0.22098214285714285,
+          "false_per_day": 0.06667794587759683,
+          "median_lead_min": 30.0,
+          "events": 448
+        },
+        {
+          "threshold": 0.6,
+          "recall": 0.10491071428571429,
+          "false_per_day": 0.03248412747882923,
+          "median_lead_min": 30.0,
+          "events": 448
+        }
+      ]
+    },
+    "ci_vs_cgm": {
+      "Personal twin (CGM + events + memory)": [
+        -0.00401768612592957,
+        0.014980058324735212
+      ],
+      "Personal twin + core EHR (9 fields)": [
+        -0.014854969238717791,
+        0.009323632338165438
+      ],
+      "Full twin (+ EHR)": [
+        -0.013333005459916314,
+        0.009846047125464835
+      ]
+    },
+    "ci_day1_core_vs_personal": [
+      -0.011992491624796538,
+      0.019644929417526196
+    ]
+  }
+}
